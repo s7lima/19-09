@@ -53,7 +53,6 @@ body {
 }
 
 #login-form input {
-
     display: block;
     font-size: 12px;
     padding: 12px 9px;
@@ -65,14 +64,14 @@ body {
 }
 
 #login-form input[type="submit"] {
-    background-color:#b2dffc;
+    background-color: #b2dffc;
     color: #fff;
     margin-top: 15px;
     border-radius: 5px;
     height: 30px;
     font-size: 13px;
     padding: 0;
-    font-weight:  bold;
+    font-weight: bold;
 }
 
 .separator {
@@ -80,11 +79,10 @@ body {
 }
 
 .line {
-    border: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
     width: 268px;
     margin: 25px auto 35px;
 }
-
 
 .separator span {
     position: absolute;
@@ -122,8 +120,8 @@ body {
 
 #forgot-pass a {
     text-decoration: none;
-    color: #373799
-}   
+    color: #373799;
+}
 
 #register-container {
     background-color: #fff;
@@ -135,11 +133,11 @@ body {
 
 #register-container p {
     font-size: 14px;
-    color: #262626;
+    color: #262626
 }
 
 #register-container a {
-    text-decoration:  none;
+    text-decoration: none;
     color: #4a95f6;
     font-weight: bold;
 }
@@ -150,11 +148,11 @@ body {
 }
 
 #get-app-container p {
-    margin: 25px 0;
+    margin: 20px 0;
     font-size: 13px;
 }
 
-#get-app-container p {
+#get-app-container a {
     text-decoration: none;
 }
 
@@ -172,10 +170,9 @@ footer {
     justify-content: center;
 }
 
-#footer-links{
+#footer-links {
     display: flex;
     margin-right: 10px;
-
 }
 
 nav #footer-links {
@@ -184,6 +181,7 @@ nav #footer-links {
 
 nav #footer-links li {
     margin-right: 10px;
+
 }
 
 #footer-links a,
@@ -197,4 +195,30 @@ nav #footer-links li {
     margin-top: 10px;
 }
 
-/* Desafio -Trabalhar a responsavidade desse projeto */
+/* DESAFIO  - Trabalhar a responsividade desse projeto*/
+
+/* Celular */
+
+@media(max-width: 450px) {
+    body{
+        background-color: #fff;
+    }
+    #banner-container {
+        display: none;
+    }
+    #main-container,
+    #form-box,
+    #register-container,
+    #get-app-container{
+        width: 100%;
+        border: none;
+    }
+    footer {
+        width: 100%;
+    }
+    #footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
